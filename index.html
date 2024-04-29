@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            font-family:sans-serif;
+            background-color: lightgoldenrodyellow;
+        }
+        table{
+            border-collapse: collapse;
+            border-color: black;
+            width: 100%;
+        }
+        label{
+            font-weight: bold;
+        }
+        .buttons{
+            height: 50px;
+            width: 150px;
+        }
+        h1{
+            text-align: center;
+            font-weight: bold;
+            font-size: 48px;
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <title>
+        FORMS IN HTML
+    </title>
+</head>
+<body>
+    <h1>Customer Information</h1>
+    <form method="post" action="thankyouforordering.html">
+        <table id="info" border="1">
+            <tr>
+                <td><label for="fullname">Full Name</label></td>
+                <td><input type="text" size="30" name="fullname" placeholder="Input Your Name Here" required maxlength="35"></td>
+            </tr>
+            <tr>
+                <td><label for="address">Address</label></td>
+                <td><input type="address" size="30" name="address" placeholder="Input Your Address Here" required maxlength="35"></td>
+            </tr>
+            <tr>
+                <td><label for="contact">Contact Number</label></td>
+                <td><input type="text" size="30" name="contact" placeholder="Input Your Contact Number Here" required maxlength="35"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email Address</label></td>
+                <td><input type="email" size="30" name="email" placeholder="Input Your Email Address Here" required maxlength="35"></td>
+            </tr>
+            <tr>
+                <td><label for="description">Describe how to get to the place</label></td>
+                <td><textarea size="30" name="description" rows="10" cols="31" placeholder="Input Description here" required maxlength="200"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="deliveryDate">Date and Time of Delivery</label></td>
+                <td><input type="datetime-local" size="30" name="deliveryDate"></td>
+            </tr>
+        </table><br><br><br><br><br>
+        <table border="1" id="orders">
+            <h1>Orders</h1>
+            <tr>
+                <td><img src="FAMERO_IMAGES_ITBD/burger.png" alt="burger"></td>
+                <td><h3>Burgers</h3> </td>
+                <td>
+                    <label for="burgerQuantity">Qty:</label>
+                    <select name="burgerQuantity" id="burgerQuantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                    <label for="patty">Patty:</label>
+                    <select id="patty" name="patty">
+                        <option value="withPatty">with Patty</option>
+                        <option value="withoutPatty">without Patty</option>
+                    </select>                           
+                    <label for="bun">Bun</label>            
+                    <select id="bun" name="bun">
+                        <option value="whiteBun">White Bun</option>
+                        <option value="wheatBun">Wheat Bun</option>
+                        <option value="honeyOat">Honey Oat</option>
+                        <option value="sugarFree">Sugar Free</option>
+                    </select>
+                    <input type="checkbox" name="cheese">
+                    <label for="cheese">Cheese</label>
+                    <input type="checkbox" name="coleslaw">
+                    <label for="coleslaw">Coleslaw</label>
+                    <input type="checkbox" name="tomato">
+                    <label for="tomato">Tomato</label>
+                    <input type="checkbox" name="onion">
+                    <label for="onion">Onion</label>
+                    <input type="checkbox" name="cucumber">
+                    <label for="cucumber">Cucumber</label>
+                    <input type="checkbox" name="bacon">
+                    <label for="bacon">Bacon</label>
+                </td>
+                </span>
+            </tr>
+            <tr>
+                <td><img src="FAMERO_IMAGES_ITBD/pasta.png" alt="Burger"></td>
+                <td><h3>Pasta</h3></td>
+                <td>
+                    <label for="pastaQuantity">Qty:</label>
+                    <select name="pastaQuantity" id="pastaQuantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                    <select id="pasta" name="pasta">
+                        <option value="carbonara">Carbonara</option>
+                        <option value="pesto">Pesto</option>
+                        <option value="spaghetti">Spaghetti</option>
+                    </select>
+                    <input type="checkbox" name="extraCheese">
+                    <label for="extraCheese">Extra Cheese</label>
+                    <input type="checkbox" name="extraSauce">
+                    <label for="extraCheese">Extra Sauce</label>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="FAMERO_IMAGES_ITBD/frenchFries.png" alt="French Fries"></td>
+                <td><h3>Fries</h3></td>
+                <td>
+                    <label for="friesSize">Size</label>
+                    <select id="friesSize" name="friesSize">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <label for="friesFlavor">Flavor</label>
+                    <select id="friesFlavor" name="friesFlavor">
+                        <option value="bbq">Barbecue</option>
+                        <option value="cheese">Cheese</option>
+                        <option value="sourCream">Sour Cream</option>
+                    </select>
+                    <label for="flavorQty">Quantity</label>
+                    <select id="flavorQty" name="flavorQty">
+                        <option value="mild">Mild</option>
+                        <option value="medium">Medium</option>
+                        <option value="strong">Strong</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>                
+                <td><img src="FAMERO_IMAGES_ITBD/drinks.png" alt="drinks"></td>
+                <td><h3>Drinks</h3></td>
+                <td>
+                    <select id="drinks" name="drinks">
+                        <option value="coke">Coke</option>
+                        <option value="sprite">Sprite</option>
+                        <option value="Royal">Royal</option>
+                        <option value="sarsi">Sarsi</option>
+                        <option value="pepsi">Pepsi</option>
+                        <option value="icedTea">Iced Tea</option>
+                    </select>
+                    </select>
+                    <label for="drinksSize">Size</label>
+                    <select id="drinksSize" name="drinksSize">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <label for="drinksQuantity">Quantity</label>
+                    <select id="drinksQuantity" name="drinksQuantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        
+        <td><input type="submit" name="submit" class="buttons"></td>
+        <td><input type="reset" name="Clear Form" class="buttons"></td>
+    </form>
+    <h6>All icons used in this website were downloaded for free at <a href="https://icons8.com/icons">Icons8.com</a></h6>
+</body>
+</html>
